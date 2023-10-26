@@ -120,11 +120,11 @@ internal fun BasicWebViewSample() {
                             expiresDate = 1896863778
                         )
                     )
-                    Logger.i {
+                    Logger.d {
                         "cookie: ${state.cookieManager.getCookies("https://github.com")}"
                     }
                     state.cookieManager.removeAllCookies()
-                    Logger.i {
+                    Logger.d {
                         "cookie: ${state.cookieManager.getCookies("https://github.com")}"
                     }
                 }
